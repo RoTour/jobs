@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter | Robin TOURNÉ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Professional Blue & Slate -->
+    <!-- Application Structure Plan: A personal, single-page portfolio-style site to present the cover letter. The structure is designed for a recruiter's workflow, allowing them to quickly grasp the candidate's identity, motivation, key skills, and logistical readiness. It uses a top-down narrative flow: Hero (who I am), Motivation (why I'm applying), Core Skills (what I can do), a new Experience Timeline (where I've been), Adaptability (how I grow), and Logistics (how I'll fit in). This is more engaging than a static document and easier to scan for key information. -->
+    <!-- Visualization & Content Choices: 
+        - Header & Contact: Goal: Inform. Method: Key-value icons (HTML/Tailwind) for scannable contact info. Interaction: Links. Justification: Standard, effective way to present contact details.
+        - Motivation Section: Goal: Inform. Method: Formatted text block. Interaction: None. Justification: Clearly presents the introductory paragraph.
+        - Core Skills Section: Goal: Organize/Showcase. Method: A grid of cards with icons. Interaction: Hover effects on cards. Justification: Breaks down the dense skills paragraph into digestible, visually appealing elements that are easy to scan.
+        - Experience Timeline: Goal: Show progression. Method: A vertical timeline created with HTML and Tailwind CSS. Interaction: None. Justification: Visually represents career history in a chronological, easy-to-follow format, which is much clearer than a text block.
+        - Adaptability Section: Goal: Inform. Method: A distinct callout block. Interaction: None. Justification: Highlights the "bonus" skills and learning attitude, making it stand out.
+        - Logistics Section: Goal: Reassure. Method: A clear, focused text block. Interaction: None. Justification: Directly addresses the time zone requirement, showing proactivity.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            /* slate-100 */
+        }
+
+        .skill-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: calc(-2rem - 2px);
+            transform: translate(-50%, 4px);
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid #3b82f6; /* blue-500 */
+        }
+    </style>
+</head>
+
+<body class="text-slate-700">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-b-lg lg:mt-12 lg:mb-12">
+
+        <header class="bg-slate-800 text-white p-8 md:p-12 rounded-t-lg">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+                <p class="text-xl md:text-2xl mt-2 text-slate-300">Fullstack Software Engineer</p>
+            </div>
+            <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-300">
+                <a href="#" class="hover:text-white transition-colors">Phone: +33 6 29 27 72 29</a>
+                <span class="hidden md:inline">|</span>
+                <a href="mailto:rotour.dev@gmail.com"
+                    class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+                <span class="hidden md:inline">|</span>
+                <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank"
+                    class="hover:text-white transition-colors">LinkedIn</a>
+                <span class="hidden md:inline">|</span>
+                <a href="https://github.com/rotour" target="_blank"
+                    class="hover:text-white transition-colors">GitHub</a>
+                <span class="hidden md:inline">|</span>
+                <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+            </div>
+        </header>
+
+        <main class="p-8 md:p-12">
+
+            <section id="introduction" class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b pb-2">To the Atlassian Hiring Team</h2>
+                <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                    <p>
+                        I am writing to express my enthusiastic interest in the Fullstack Software Engineer position at Atlassian. As a developer and founder of an educational platform, RALTech School, your mission to "unleash the potential of every team" deeply resonates with my passion for building tools that foster seamless collaboration and innovation. The opportunity to contribute to the creative improvements your team is delivering for engineers is incredibly compelling.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills" class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-2">My Core Strengths</h2>
+                <p class="text-lg text-slate-600 max-w-3xl mb-8">
+                    My background in Computer Science and 7+ years of professional work have equipped me with a robust set of skills in modern web development, from front-end components to back-end services and infrastructure.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">Frontend Development</h3>
+                        <p class="text-slate-600">Svelte/SvelteKit, Next.js, Angular, Vue, React.</p>
+                    </div>
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">Backend Development</h3>
+                        <p class="text-slate-600">Nest.js, Express, Hono on Node.js, Deno, and Bun environments.</p>
+                    </div>
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">System Architecture</h3>
+                        <p class="text-slate-600">Hexagonal Architecture, Test-Driven Development (TDD), Domain-Driven Design (DDD).</p>
+                    </div>
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">DevOps & Cloud</h3>
+                        <p class="text-slate-600">Docker, GitHub Actions, GitLab CI, and various AWS services.</p>
+                    </div>
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">Collaborative Tools</h3>
+                        <p class="text-slate-600">Extensive experience with Git, GitFlow, and working in agile team settings.</p>
+                    </div>
+                    <div class="skill-card bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="font-semibold text-lg text-slate-800 mb-2">Mentorship & Education</h3>
+                        <p class="text-slate-600">Founder of RALTech School, mentor for computer science students.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="experience" class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-8 border-b pb-2">Professional Journey</h2>
+                <div class="relative pl-8" style="border-left: 4px solid #e2e8f0;">
+                    <div class="timeline-item mb-10 relative">
+                        <h3 class="font-bold text-xl text-slate-800">Founder</h3>
+                        <p class="font-semibold text-md text-slate-600">RALTech School (Freelance)</p>
+                        <p class="text-sm text-slate-500 my-1">Sept 2023 - Present · France (Remote)</p>
+                        <p class="text-slate-600">Creation of an online school teaching web development with a passion never seen before.</p>
+                    </div>
+                    <div class="timeline-item mb-10 relative">
+                        <h3 class="font-bold text-xl text-slate-800">Fullstack Developer & Automation Engineer</h3>
+                        <p class="font-semibold text-md text-slate-600">FEELING SPORTS</p>
+                        <p class="text-sm text-slate-500 my-1">Sept 2023 - Oct 2024 · Toulouse, France</p>
+                        <p class="text-slate-600">Implemented DevOps solutions and developed automation services to improve team efficiency.</p>
+                    </div>
+                     <div class="timeline-item mb-10 relative">
+                        <h3 class="font-bold text-xl text-slate-800">Computer Science Mentor</h3>
+                        <p class="font-semibold text-md text-slate-600">Toulouse YNOV Campus</p>
+                        <p class="text-sm text-slate-500 my-1">Oct 2021 - Dec 2023 · Toulouse, France</p>
+                        <p class="text-slate-600">Mentored students in various IT subjects, including web and software development.</p>
+                    </div>
+                    <div class="timeline-item relative">
+                        <h3 class="font-bold text-xl text-slate-800">Web Development Intern & Junior Mentor</h3>
+                        <p class="font-semibold text-md text-slate-600">Toulouse YNOV Campus</p>
+                        <p class="text-sm text-slate-500 my-1">Apr 2021 - Oct 2021 · Toulouse, France</p>
+                        <p class="text-slate-600">Developed web solutions and began mentoring junior students.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="adaptability" class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-2">Adaptability & Growth</h2>
+                <p class="text-lg text-slate-600 max-w-3xl mb-6">
+                    I am always eager to expand my technical toolkit and apply my skills to new challenges. I was pleased to see the mention of enterprise content management systems and cloud platforms, as these are areas where I am confident I can quickly contribute.
+                </p>
+                <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-6 rounded-r-lg">
+                    <p class="font-semibold">
+                        With hands-on experience in AWS and a foundational knowledge of cloud principles, I am eager to apply and expand my skills within the Atlassian environment.
+                    </p>
+                </div>
+            </section>
+
+            <section id="logistics" class="mb-12">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-2">Commitment to Collaboration</h2>
+                <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                    <p>
+                        My love for working collaboratively to solve complex problems aligns perfectly with Atlassian's culture. I understand this is a fully remote role that requires availability during US Pacific or Mountain time zones. Based in France, I am fully prepared and able to work within these hours to ensure seamless collaboration with the team. I am confident in my ability to be a productive and engaged team member in a distributed-first environment.
+                    </p>
+                </div>
+            </section>
+
+            <section id="closing">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-2">Next Steps</h2>
+                <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                    <p>
+                        I am excited by the prospect of bringing my skills to your team and contributing to products that help teams worldwide achieve more, together. Thank you for your time and consideration. I have attached my resume for your review and welcome the opportunity to discuss my qualifications and how I can contribute to Atlassian's success.
+                    </p>
+                     <p class="font-semibold pt-4">Best regards,</p>
+                    <p class="font-semibold text-xl text-slate-800">Robin TOURNÉ</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
