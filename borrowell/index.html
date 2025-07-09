@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter | Robin TOURNÉ for Borrowell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chosen Palette: Borrowell Brand Theme (Purple, Blue, Gold) -->
+  <!-- Application Structure Plan: The application is structured as a personal narrative portfolio. It starts with a strong headline and a direct, mission-aligned introduction. The core is a chronological "Experience" section that uses interactive cards to detail key achievements at Feeling Sports and RALTech, allowing recruiters to see impact at a glance. This is followed by a "Philosophy & Alignment" section that explicitly connects the user's proven skills (architecture, scalability) and passion (education, building tools) to Borrowell's needs. This structure tells a story: who I am, what I've done, and why I'm the right fit for you. It's more engaging than a traditional letter and allows for a non-linear exploration of the user's qualifications. -->
+  <!-- Visualization & Content Choices: 
+        - High-Concurrency Stat: Goal: Highlight a key metric. Method: A large number with a simple JS counter animation. Interaction: Animated on load. Justification: Makes the "100,000 concurrent users" figure memorable and impactful. Method: Vanilla JS.
+        - Experience Timeline: Goal: Organize career history. Method: Vertical timeline with styled cards. Interaction: Subtle hover effects on cards. Justification: Provides a clear, chronological flow of experience that is more visually engaging than a simple list. Method: HTML/Tailwind.
+        - Architecture Mention: Goal: Showcase technical leadership. Method: A distinct callout card. Justification: Emphasizes the key achievement of improving architecture (SOLID + Hexa), directly addressing the job's requirement for maintainable code. Method: HTML/Tailwind.
+    -->
+  <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-3rem - 1px);
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #facc15; /* yellow-400 */
+  }
+
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-800 text-white p-8 md:p-12 rounded-t-lg">
+          <div class="text-center">
+              <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+              <p class="text-xl md:text-2xl mt-2 text-slate-300">Full Stack Developer</p>
+          </div>
+          <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+              <a href="tel:+33629277229" class="hover:text-white transition-colors">Phone: +33 6 29 27 72 29</a>
+              <span class="hidden md:inline">|</span>
+              <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+              <span class="hidden md:inline">|</span>
+              <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+              <span class="hidden md:inline">|</span>
+              <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+              <span class="hidden md:inline">|</span>
+              <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+          </div>
+      </header>
+      
+      <div class="bg-white shadow-lg rounded-b-lg">
+        <div class="p-8 md:p-12">
+            <!-- Introduction -->
+            <section id="intro" class="mb-12 md:mb-16">
+                <h2 class="text-2xl font-bold text-slate-800 mb-3">To the Hiring Team at Borrowell,</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                  I am writing to express my strong interest in the Full Stack Developer position. Your mission to help Canadians feel confident about their money by providing empowering tools is inspiring. It aligns perfectly with my own professional drive to build software that makes complex domains accessible and manageable for users, a principle I applied when founding my e-learning platform, RALTech. I am excited by the prospect of contributing to new products that will directly impact the financial well-being of millions.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="mb-12 md:mb-16">
+              <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">My Journey & Key Achievements</h3>
+
+              <div class="relative pl-12 border-l-2 border-slate-200">
+
+                <!-- Feeling Sports Experience -->
+                <div class="timeline-item mb-12">
+                  <div class="p-6 rounded-xl experience-card">
+                    <p class="text-sm font-semibold text-yellow-500">Sept 2023 - Sept 2024</p>
+                    <h4 class="text-xl font-bold text-slate-800 mt-1">AWS Architect & Full-Stack Developer</h4>
+                    <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+
+                    <div class="my-6 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                      <p class="font-semibold text-slate-800">Building for Scale and Reliability</p>
+                      <p class="text-slate-600 mt-1">I led the re-architecture of a high-traffic SaaS application. By implementing a scalable microservices approach and robust architectural patterns, we created a resilient system capable of handling immense user loads—a critical requirement for any fintech platform.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 text-center">
+                      <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-4xl font-black text-yellow-500" id="user-counter">0</p>
+                        <p class="font-semibold text-slate-600">Concurrent Users Supported</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 rounded-lg flex flex-col justify-center">
+                        <p class="text-xl font-bold text-slate-800">Modern JavaScript Expertise</p>
+                        <p class="text-slate-600">Deep experience with React, TypeScript, and other modern frameworks to build responsive front-ends.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- RALTech Experience -->
+                <div class="timeline-item">
+                  <div class="p-6 rounded-xl experience-card">
+                    <p class="text-sm font-semibold text-yellow-500">Sept 2023 - Present</p>
+                    <h4 class="text-xl font-bold text-slate-800 mt-1">Founder & Lead Developer</h4>
+                    <p class="text-md text-slate-500 font-medium">RALTech (E-Learning)</p>
+                    <p class="text-slate-600 mt-4">As founder, I designed and built a complete e-learning platform from scratch. This involved creating user-centric tools that empower students to take control of their learning journey, much like how Borrowell empowers users to take control of their finances.</p>
+                    <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                      <li>
+                        <span class="font-semibold">Full-Stack Product Development:</span> Built both the student-facing learning application and the backend intranet for progress tracking.
+                      </li>
+                       <li>
+                        <span class="font-semibold">Database Management:</span> Utilized both SQL and NoSQL databases to manage complex student and course data effectively.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Alignment & Closing -->
+            <section id="alignment" class="text-center bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+              <h3 class="text-3xl font-bold mb-4">Why Borrowell?</h3>
+              <p class="max-w-2xl mx-auto text-lg text-indigo-100 leading-relaxed">
+                I am drawn to Borrowell not only for the technical challenge of building new products from the ground up, but also for your team's values. Humility, collaboration, and a willingness to learn from mistakes are principles I practice daily. While my backend experience is primarily in other ecosystems, I am a quick and persistent learner, eager to dive into .NET 8 and contribute within your Azure environment. I believe my skills in building scalable, user-focused applications make me a strong fit for your mission.
+              </p>
+              <a href="https://rotour.dev" target="_blank"
+                class="mt-8 inline-block bg-yellow-400 text-purple-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105">
+                View My Portfolio
+              </a>
+            </section>
+        </div>
+      </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      function animateCounter(element, target) {
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 100));
+        const interval = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            element.innerText = target.toLocaleString('en-US');
+            clearInterval(interval);
+          } else {
+            element.innerText = current.toLocaleString('en-US');
+          }
+        }, 15);
+      }
+
+      const counterElement = document.getElementById('user-counter');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(counterElement, 100000);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.8 });
+
+      if (counterElement) {
+        observer.observe(counterElement);
+      }
+    });
+  </script>
+</body>
+
+</html>
