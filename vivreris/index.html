@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter | Robin TOURNÉ for Viveris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Application Structure Plan: 
+    This page is tailored for the Viveris offer. The introduction directly addresses their innovative satellite connectivity project. The experience section is re-framed to emphasize scalability and backend expertise (Python/TypeScript), which are direct matches. A key card is included to proactively address the VueJS/Nuxt requirement by highlighting framework adaptability and strong JavaScript fundamentals. The closing section connects my experience in building robust systems to their goal of industrializing a new product.
+  -->
+  <!-- 
+    Visualization & Content Choices: 
+    - Header Gradient: Per user request, the header now uses a professional dark blue-to-purple gradient for a modern, tech-focused look.
+    - Experience Timeline: A vertical timeline organizes career history, focusing on achievements relevant to industrial-scale software and backend development.
+    - Framework Adaptability Card: Goal: Address the VueJS vs. React mismatch. Method: A dedicated card that frames my React experience as proof of strong component-based architecture skills and fast learning ability. Justification: This turns a potential weakness into a strength by focusing on core principles over specific tools.
+  -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Vertical line for the timeline */
+    .timeline-item {
+      position: relative;
+    }
+
+    /* Timeline circle indicators - UPDATED to Viveris brand red */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 1px); /* Adjusted for mobile */
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #ef4444; /* UPDATED: Tailwind red-500 */
+      z-index: 10;
+    }
+
+    /* Adjust position for larger screens */
+    @media (min-width: 768px) {
+      .timeline-item::before {
+        left: calc(-3rem - 1px);
+      }
+    }
+
+    /* Hover effect for experience cards to add interactivity */
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+    <!-- Header Section: Name, Title, and Contact Info with new gradient background -->
+    <header class="bg-slate-900 bg-gradient-to-br from-slate-900 to-red-600 text-white p-8 md:p-12 rounded-t-lg">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-300">Full Stack Developer</p>
+      </div>
+      <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+        <a href="tel:+33629277229" class="hover:text-white transition-colors">Phone: +33 6 29 27 72 29</a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="bg-white shadow-lg rounded-b-lg">
+      <div class="p-8 md:p-12">
+        <!-- Introduction: Directly addressing Viveris -->
+        <section id="intro" class="mb-12 md:mb-16">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">To the Hiring Team at Viveris,</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            I am writing to express my enthusiastic interest in the Full Stack Developer position. The challenge of industrializing a satellite connectivity solution is precisely the kind of innovative, high-impact project I am eager to tackle. My experience in designing scalable software architectures and my proficiency in backend development with <strong class="font-semibold">Python and TypeScript</strong> align perfectly with the core needs of this mission.
+          </p>
+        </section>
+
+        <!-- Experience Section: A timeline of relevant achievements -->
+        <section id="experience" class="mb-12 md:mb-16">
+          <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">Relevant Experience & Technical Skills</h3>
+
+          <div class="relative pl-8 md:pl-12 border-l-2 border-slate-200">
+
+            <!-- Feeling Sports Experience: Highlighting architecture and backend -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-red-600">Sept 2023 - Sept 2024</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">AWS Solution Architect & FullStack Developer</h4>
+                <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+
+                <div class="my-6 bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                  <p class="font-semibold text-slate-800">Industrial-Grade System Design</p>
+                  <p class="text-slate-600 mt-1">I led the upgrade of a legacy system to a modern, scalable AWS architecture. This involved designing for high availability and performance, skills directly applicable to industrializing a robust product for production environments.</p>
+                </div>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Backend Development:</strong> Built and maintained backend services and REST APIs, working extensively with technologies relevant to your stack.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Architectural Leadership:</strong> Drove the transition to a maintainable, hexagonal architecture, demonstrating my ability to improve codebases and contribute to technical design.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Framework Adaptability: Addressing the VueJS requirement -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card bg-slate-800 text-white shadow-lg">
+                <h4 class="text-xl font-bold text-white mt-1">Framework Agnostic & Fast Learner</h4>
+                <p class="text-slate-300 mt-2">While my recent frontend work has been in React, my expertise is rooted in core <strong class="font-semibold">JavaScript and TypeScript</strong> principles and component-based architecture. I am confident in my ability to quickly become proficient in <strong class="font-semibold">VueJS/Nuxt</strong>, as I have a proven history of adapting to the best tools for the job to build exceptional user interfaces.</p>
+              </div>
+            </div>
+
+            <!-- RALTech Experience: Highlighting full-stack ownership and TypeScript -->
+            <div class="timeline-item">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-red-600">Sept 2023 - Present</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Founder & Full-Stack Developer</h4>
+                <p class="text-md text-slate-500 font-medium">RALTech (E-Learning)</p>
+                <p class="text-slate-600 mt-4">As founder, I built a complete e-learning platform from the ground up. This project solidified my skills in <strong class="font-semibold">TypeScript</strong> for backend development and my ability to manage the entire lifecycle of a software product in an Agile manner.</p>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Docker & Git:</strong> Utilized Docker for containerization and Git for version control throughout the development process.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">End-to-End Development:</strong> From technical design and user stories to deployment, I owned the entire product development process.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Alignment & Closing: The final pitch -->
+        <section id="alignment" class="text-center bg-slate-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+          <h3 class="text-3xl font-bold mb-4">Why Viveris?</h3>
+          <p class="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed">
+            I am driven by technical challenges and collaborative environments. The opportunity to contribute to an innovative project with a tangible, real-world application is highly motivating. My background in building scalable, robust systems and my full-stack expertise make me a strong candidate to help design and develop the next generation of your satellite connectivity solution.
+          </p>
+          <a href="https://rotour.dev" target="_blank" class="mt-8 inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 hover:bg-red-700">
+            View My Portfolio
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+  <script>
+    // This script is included for potential future use but is not currently animating any elements.
+    document.addEventListener('DOMContentLoaded', () => {
+      // Counter animation logic could be placed here if needed.
+    });
+  </script>
+</body>
+
+</html>
