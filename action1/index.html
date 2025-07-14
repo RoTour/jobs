@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter | Robin TOURNÉ for Action1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Application Structure Plan: 
+    This page is structured to tell a story that directly aligns with Action1's needs. It starts with a direct introduction referencing their mission of building a scalable, cloud-native platform. The core is a re-framed "Experience" timeline highlighting high-load systems, architectural improvements, and full-stack development with Node.js and AWS. A key addition is a card about architectural refactoring, which subtly addresses the "legacy PHP" requirement by showing a history of improving older codebases. The closing section reinforces this alignment, making a clear case for my candidacy.
+  -->
+  <!-- 
+    Visualization & Content Choices: 
+    - High-Concurrency Stat: Goal: Prove I can handle scale. Method: A large number with a simple JS counter. Interaction: Animated on load. Justification: "100,000 concurrent users" directly answers Action1's need for experience with "high-load" products with numerous endpoints.
+    - Experience Timeline: Goal: Organize career history effectively. Method: A vertical timeline with styled cards. Justification: Provides a clear, visual flow that highlights relevant achievements for a recruiter, making it easy to scan and digest.
+    - Architecture Card: Goal: Address the legacy code requirement tactfully. Method: A distinct callout card focusing on improving a legacy system. Justification: Shows I'm not afraid of legacy code and have a track record of modernizing it, turning a potential negative ("must maintain PHP") into a major positive.
+  -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Vertical line for the timeline */
+    .timeline-item {
+      position: relative;
+    }
+
+    /* Timeline circle indicators - UPDATED to Action1's brand blue */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 1px); /* Adjusted for mobile */
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #2563eb; /* UPDATED: Tailwind blue-600 */
+      z-index: 10;
+    }
+
+    /* Adjust position for larger screens */
+    @media (min-width: 768px) {
+      .timeline-item::before {
+        left: calc(-3rem - 1px);
+      }
+    }
+
+    /* Hover effect for experience cards to add interactivity */
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+    <!-- Header Section: Name, Title, and Contact Info - using a dark slate that matches Action1's header feel -->
+    <header class="bg-slate-900 bg-gradient-to-br from-slate-900 to-blue-600 text-white p-8 md:p-12 rounded-t-lg">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-300">Full Stack Developer</p>
+      </div>
+      <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+        <a href="tel:+33629277229" class="hover:text-white transition-colors">Phone: +33 6 29 27 72 29</a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="bg-white shadow-lg rounded-b-lg">
+      <div class="p-8 md:p-12">
+        <!-- Introduction: Directly addressing Action1 -->
+        <section id="intro" class="mb-12 md:mb-16">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">To the Hiring Team at Action1,</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            I am writing to express my strong interest in the Full Stack Developer position. Action1's mission to build a highly scalable, cloud-native endpoint management platform resonates deeply with my professional experience. Having engineered and scaled high-load applications on AWS, I am excited by the opportunity to apply my skills in <em>Node.js, TypeScript, and React</em> to help solve complex security challenges and contribute to a product trusted by thousands of enterprises.
+          </p>
+        </section>
+
+        <!-- Experience Section: A timeline of relevant achievements -->
+        <section id="experience" class="mb-12 md:mb-16">
+          <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">My Experience with High-Load Systems</h3>
+
+          <div class="relative pl-8 md:pl-12 border-l-2 border-slate-200">
+
+            <!-- Feeling Sports Experience: Highlighting scale and AWS -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-blue-700">Sept 2023 - Sept 2024</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">AWS Solution Architect & FullStack Developer</h4>
+                <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+
+                <div class="my-6 bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                  <p class="font-semibold text-slate-800">Architecting for Scale & Performance</p>
+                  <p class="text-slate-600 mt-1">I upgraded a legacy infrastructure to a modern, scalable AWS architecture, ensuring high availability and performance for a SaaS product with demanding traffic spikes. This is where I honed my skills in managing high-load systems.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 text-center">
+                  <div class="bg-slate-100 p-4 rounded-lg">
+                    <p class="text-4xl font-black text-blue-600" id="user-counter">0</p>
+                    <p class="font-semibold text-slate-600">Concurrent Users Supported</p>
+                  </div>
+                  <div class="bg-slate-100 p-4 rounded-lg flex flex-col justify-center">
+                    <p class="text-xl font-bold text-slate-800">Full-Stack Proficiency (Node.js & AWS)</p>
+                    <p class="text-slate-600">Developed backend services and REST APIs, leveraging AWS services like EC2 and working with both SQL and NoSQL databases to support the frontend.</p>
+                  </div>
+                </div>
+                <div class="p-6 mt-6 rounded-xl experience-card bg-slate-800 text-white shadow-lg">
+                  <h4 class="text-xl font-bold text-white mt-1">Pragmatic Architectural Leadership</h4>
+                  <p class="text-slate-300 mt-2">At Feelingsports, the codebase was difficult to maintain. I successfully advocated for and led the transition to a modern software architecture (SOLID, Hexagonal). This experience proves I am not afraid to dive into legacy systems—I see them as an opportunity to build robust, maintainable, and performant solutions.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- RALTech Experience: Highlighting full-stack ownership -->
+            <div class="timeline-item">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-blue-700">Sept 2023 - Present</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1"><em>Founder & Full-Stack Developer</em></h4>
+                <p class="text-md text-slate-500 font-medium">RALTech (E-Learning)</p>
+                <p class="text-slate-600 mt-4">As founder, I designed and built an entire e-learning platform from scratch. This involved developing both a <em>Node.js/TypeScript</em> backend with REST APIs and a user-facing frontend with <em>React</em>, demonstrating my ability to own the full development lifecycle.</p>
+                <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <span class="font-semibold">Designed and Developed REST APIs:</span> Created the data layer to support complex application features and student tracking.
+                  </li>
+                  <li>
+                    <span class="font-semibold">End-to-End Ownership:</span> Managed development from concept to deployment, focusing on clean, testable code and application performance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Alignment & Closing: The final pitch -->
+        <section id="alignment" class="text-center bg-slate-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+          <h3 class="text-3xl font-bold mb-4">Why Action1?</h3>
+          <p class="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed">
+            I am drawn to Action1's engineering challenges: building a secure, high-performance platform that just works. My experience with the <em>Node.js, React, and AWS</em> stack, combined with a proven track record in scaling systems and refactoring code for performance, aligns perfectly with your requirements. I am confident I can quickly become a driving force on your team and contribute to your success.
+          </p>
+          <a href="https://rotour.dev" target="_blank" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 hover:bg-blue-700">
+            View My Portfolio
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+  <script>
+    // This script animates the concurrent user counter when it becomes visible in the viewport.
+    document.addEventListener('DOMContentLoaded', () => {
+      /**
+       * Animates a number counting up from 0 to a target value.
+       * @param {HTMLElement} element The HTML element to update.
+       * @param {number} target The final number to count to.
+       */
+      function animateCounter(element, target) {
+        let current = 0;
+        // Calculate a dynamic step to ensure animation completes in a reasonable time
+        const step = Math.max(1, Math.ceil(target / 100)); 
+        const interval = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            // Ensure the final number is exact and formatted
+            element.innerText = target.toLocaleString('en-US');
+            clearInterval(interval);
+          } else {
+            element.innerText = current.toLocaleString('en-US');
+          }
+        }, 15); // Update every 15ms for a smooth animation
+      }
+
+      const counterElement = document.getElementById('user-counter');
+      
+      // Use IntersectionObserver to trigger the animation only when the element is on screen
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(counterElement, 100000);
+            observer.unobserve(entry.target); // Stop observing after animation starts
+          }
+        });
+      }, { threshold: 0.8 }); // Trigger when 80% of the element is visible
+
+      if (counterElement) {
+        observer.observe(counterElement);
+      }
+    });
+  </script>
+</body>
+
+</html>
