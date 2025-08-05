@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter | Robin TOURNÉ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Application Structure Plan: 
+    This page is meticulously crafted to mirror the job description's requirements. The introduction immediately answers their screening question and states alignment with their "purpose-driven" philosophy. The experience section is structured to provide direct evidence for their "Expert" and "Strong Experience" requirements, using dedicated cards for core backend (NodeJS/NestJS), frontend (React/Redux), and DevOps (Docker/CI/CD) skills. This approach makes it easy for a recruiter to check off their required competencies.
+  -->
+  <!-- 
+    Visualization & Content Choices: 
+    - Header Gradient: A professional green-themed gradient is used to create a fresh, modern look distinct from previous versions.
+    - Experience Timeline: The timeline highlights projects that directly support claims of expertise in high-load backend systems and full-stack development.
+    - Core Skills Card: Goal: Explicitly confirm expertise in their required stack. Method: A dedicated card that lists technologies like NestJS, React, Redux-Saga, Docker, and GitFlow. Justification: This acts as a direct response to their checklist-style job requirements, leaving no doubt about my technical fit.
+  -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Vertical line for the timeline */
+    .timeline-item {
+      position: relative;
+    }
+
+    /* Timeline circle indicators */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 1px); /* Adjusted for mobile */
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #10b981; /* emerald-500 for a fresh, techy look */
+      z-index: 10;
+    }
+
+    /* Adjust position for larger screens */
+    @media (min-width: 768px) {
+      .timeline-item::before {
+        left: calc(-3rem - 1px);
+      }
+    }
+
+    /* Hover effect for experience cards to add interactivity */
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+    <!-- Header Section: Name, Title, and Contact Info with new gradient background -->
+    <header class="bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-900 text-white p-8 md:p-12 rounded-t-lg">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-300">Full Stack NodeJS Developer</p>
+      </div>
+      <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+        <a href="tel:+33629277229" class="hover:text-white transition-colors">Phone: +33 6 29 27 72 29</a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="bg-white shadow-lg rounded-b-lg">
+      <div class="p-8 md:p-12">
+        <!-- Introduction: Directly addressing the company -->
+        <section id="intro" class="mb-12 md:mb-16">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">To the Hiring Team,</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            I am writing to apply for the remote Full Stack Developer position. Your philosophy of purpose-driven development and focus on high-quality, solution-oriented code resonates strongly with my own work ethic. I am a collaborative, tech-agnostic developer with expert-level experience in the NodeJS ecosystem, and I thrive in environments where I can help build scalable, meaningful projects like online marketplaces.
+          </p>
+          <div class="mt-4 bg-emerald-50 border-l-4 border-emerald-400 p-4 rounded-r-lg">
+             <p class="text-slate-800"><strong class="font-semibold">Country of Residence:</strong> France</p>
+          </div>
+        </section>
+
+        <!-- Experience Section: A timeline of relevant achievements -->
+        <section id="experience" class="mb-12 md:mb-16">
+          <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">Core Technical Expertise</h3>
+
+          <div class="relative pl-8 md:pl-12 border-l-2 border-slate-200">
+
+            <!-- Core Expertise Card -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card bg-slate-800 text-white shadow-lg">
+                <h4 class="text-xl font-bold text-white mt-1">Expertise Across Your Stack</h4>
+                <p class="text-slate-300 mt-2">My experience provides me with expert-level proficiency across your required technologies:</p>
+                 <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-slate-200">
+                  <li><strong class="font-semibold">Backend:</strong> NodeJS, ExpressJS, NestJS</li>
+                  <li><strong class="font-semibold">Frontend:</strong> React, Zudstand, Axios</li>
+                  <li><strong class="font-semibold">Databases:</strong> MySQL, MongoDB</li>
+                  <li><strong class="font-semibold">DevOps:</strong> Docker, Git (GitFlow), CI/CD</li>
+                  <li><strong class="font-semibold">Testing:</strong> TDD, Jest, Mocha</li>
+                   <li><strong class="font-semibold">Plus Skills:</strong> AWS, Redis</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Feeling Sports Experience: Highlighting NodeJS, Docker, AWS -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-emerald-600">Sept 2023 - Sept 2024</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">AWS Solution Architect & FullStack Developer</h4>
+                <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+                <p class="text-slate-600 mt-4">At Feeling Sports, I architected and developed for a high-load SaaS application, giving me deep, practical experience with your required stack.
+                </p>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Backend & DevOps:</strong> I managed a scalable <strong class="font-semibold">NodeJS</strong> backend on <strong class="font-semibold">AWS</strong>, using <strong class="font-semibold">Docker</strong> in both local and production environments and managing databases like <strong class="font-semibold">MySQL</strong>.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Architectural Vision:</strong> I saw the "big picture," leading the migration from a legacy system to a modern, maintainable architecture to ensure the platform was geared for growth.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RALTech Experience: Highlighting React, Redux, and Agile -->
+            <div class="timeline-item">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-emerald-600">Sept 2023 - Present</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Founder & Full-Stack Developer</h4>
+                <p class="text-md text-slate-500 font-medium">RALTech (E-Learning)</p>
+                <p class="text-slate-600 mt-4">Building my own platform required end-to-end ownership and a deep understanding of the full stack, from the database to the user's screen.</p>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Frontend Development:</strong> Developed a complex frontend using <strong class="font-semibold">React</strong>, managing state with approaches similar to <strong class="font-semibold">Redux-Saga</strong> and handling API communication with tools like <strong class="font-semibold">Axios</strong>.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Agile & GitFlow:</strong> Managed the entire project using <strong class="font-semibold">Agile</strong> methodologies and a strict <strong class="font-semibold">GitFlow</strong> branching strategy for clean, continuous delivery.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Alignment & Closing: The final pitch -->
+        <section id="alignment" class="text-center bg-slate-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+          <h3 class="text-3xl font-bold mb-4">A Collaborative & Conscientious Teammate</h3>
+          <p class="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed">
+            I am passionate about sharing knowledge, learning from my peers, and receiving feedback to grow as a developer. My experience and technical skills are a direct match for your requirements, and I am confident I have the strong work ethic and collaborative spirit to be a valuable asset to your team.
+          </p>
+          <a href="https://rotour.dev" target="_blank" class="mt-8 inline-block bg-emerald-500 text-slate-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 hover:bg-emerald-600">
+            View My Portfolio
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+  <script>
+    // This script is included for potential future use but is not currently animating any elements.
+    document.addEventListener('DOMContentLoaded', () => {
+      // Counter animation logic could be placed here if needed.
+    });
+  </script>
+</body>
+
+</html>
