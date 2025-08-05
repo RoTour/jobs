@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettre de Motivation | Robin TOURNÉ pour ADVEEZ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Application Structure Plan: 
+    This page is meticulously crafted for the ADVEEZ job offer, with all content in French. The introduction directly references their innovative IoT and SaaS ecosystem. The experience section provides direct evidence for their required skills, using dedicated cards to highlight expertise in their core backend (NodeJS, PostgreSQL), frontend (React), and architectural needs. It also explicitly mentions my skills that they list as a "plus" (TypeScript, Python, AWS).
+  -->
+  <!-- 
+    Visualization & Content Choices: 
+    - Header Gradient: A professional teal-themed gradient is used to create a fresh, modern look.
+    - Experience Timeline: The timeline highlights projects that directly support claims of expertise in scalable architecture and full-stack development, which are key for their SaaS platform.
+    - Core Skills Card: Goal: Explicitly confirm expertise in their required stack. Method: A dedicated card in French that lists technologies like NodeJS, React, PostgreSQL, Software Architecture, and their desired "plus" skills. This provides an immediate, positive signal to the recruiter.
+  -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Vertical line for the timeline */
+    .timeline-item {
+      position: relative;
+    }
+
+    /* Timeline circle indicators */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 1px); /* Adjusted for mobile */
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #14b8a6; /* teal-500 for a modern tech theme */
+      z-index: 10;
+    }
+
+    /* Adjust position for larger screens */
+    @media (min-width: 768px) {
+      .timeline-item::before {
+        left: calc(-3rem - 1px);
+      }
+    }
+
+    /* Hover effect for experience cards to add interactivity */
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+    <!-- Header Section: Name, Title, and Contact Info with new gradient background -->
+    <header class="bg-gradient-to-r from-slate-900 via-teal-900 to-slate-900 text-white p-8 md:p-12 rounded-t-lg">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-300">Développeur Fullstack</p>
+      </div>
+      <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+        <a href="tel:+33629277229" class="hover:text-white transition-colors">Téléphone: +33 6 29 27 72 29</a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="bg-white shadow-lg rounded-b-lg">
+      <div class="p-8 md:p-12">
+        <!-- Introduction: Directly addressing the company -->
+        <section id="intro" class="mb-12 md:mb-16">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">À l'équipe de recrutement d'ADVEEZ,</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            Je vous écris pour exprimer mon vif intérêt pour le poste de Développeur Fullstack. Le défi de développer un écosystème SaaS pour des produits IoT innovants correspond précisément au type de projet à fort impact technique et humain que je recherche. Mon expérience en architecture logicielle et ma maîtrise de l'écosystème <strong class="font-semibold">Node.js / React</strong> sont en parfaite adéquation avec les besoins de votre équipe.
+          </p>
+        </section>
+
+        <!-- Experience Section: A timeline of relevant achievements -->
+        <section id="experience" class="mb-12 md:mb-16">
+          <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">Expertise Technique et Expériences Clés</h3>
+
+          <div class="relative pl-8 md:pl-12 border-l-2 border-slate-200">
+
+            <!-- Core Expertise Card -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card bg-slate-800 text-white shadow-lg">
+                <h4 class="text-xl font-bold text-white mt-1">Maîtrise de Votre Écosystème Technologique</h4>
+                <p class="text-slate-300 mt-2">Mon expérience m'offre une maîtrise complète des technologies requises pour ce poste :</p>
+                 <ul class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 text-slate-200">
+                  <li><strong class="font-semibold">Backend:</strong> NodeJS, ExpressJS, API REST/Websocket</li>
+                  <li><strong class="font-semibold">Frontend:</strong> ReactJS, React Native</li>
+                  <li><strong class="font-semibold">Bases de données:</strong> PostgreSQL, SQL, Redis</li>
+                  <li><strong class="font-semibold">Architecture & DevOps:</strong> Architecture logicielle, Docker</li>
+                  <li><strong class="font-semibold">Mes + :</strong> TypeScript, Python, AWS</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Feeling Sports Experience: Highlighting NodeJS, Docker, AWS -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-teal-600">Sept 2023 - Sept 2024</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Architecte Logiciel & Développeur Fullstack</h4>
+                <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Conception d'Architecture Scalable:</strong> J'ai mené la migration d'un système legacy vers une architecture moderne et performante sur <strong class="font-semibold">AWS</strong>, une expérience directement applicable à l'évolution de votre plateforme SaaS.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Expertise Backend:</strong> J'ai géré un backend <strong class="font-semibold">NodeJS</strong> à forte charge, développant des APIs complexes et gérant des bases de données <strong class="font-semibold">SQL</strong>, démontrant ma maîtrise de cet environnement.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RALTech Experience: Highlighting React, Redux, and Agile -->
+            <div class="timeline-item">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-teal-600">Sept 2023 - Aujourd'hui</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Fondateur & Développeur Fullstack</h4>
+                <p class="text-md text-slate-500 font-medium">RALTech (E-Learning)</p>
+                 <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Initiative & Autonomie:</strong> La création de ma propre plateforme de A à Z prouve ma capacité à prendre des initiatives, à concevoir des solutions complètes et à être force de proposition, des qualités que vous recherchez.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Développement Frontend Moderne:</strong> J'ai développé des applications web et mobiles complexes avec <strong class="font-semibold">React</strong> et <strong class="font-semibold">React Native</strong>, en utilisant <strong class="font-semibold">TypeScript</strong> pour garantir la qualité et la maintenabilité du code.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Alignment & Closing: The final pitch -->
+        <section id="alignment" class="text-center bg-slate-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+          <h3 class="text-3xl font-bold mb-4">Pourquoi ADVEEZ ?</h3>
+          <p class="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed">
+            Je suis particulièrement attiré par votre culture d'équipe qui valorise le dialogue et l'innovation. Mon désir est de m'investir dans un projet ambitieux au sein d'une entreprise en croissance. Je suis convaincu que mes compétences techniques et ma capacité à innover seront un atout majeur pour contribuer à l'évolution de vos services et incarner les valeurs "Advanced and Easy" d'ADVEEZ.
+          </p>
+          <a href="https://rotour.dev" target="_blank" class="mt-8 inline-block bg-teal-500 text-slate-900 font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 hover:bg-teal-600">
+            Voir Mon Portfolio
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+  <script>
+    // This script is included for potential future use but is not currently animating any elements.
+    document.addEventListener('DOMContentLoaded', () => {
+      // Counter animation logic could be placed here if needed.
+    });
+  </script>
+</body>
+
+</html>
