@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lettre de Motivation | Robin TOURNÉ pour Mistral AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Application Structure Plan: 
+    This cover letter is specifically designed for the Mistral AI Senior Full Stack Engineer role. The content is in French to align with the Paris-based position. The introduction immediately connects my passion for technology with Mistral AI's mission to democratize AI. The experience section is structured to provide direct evidence of my capabilities in handling high-traffic applications and shipping products end-to-end, which are crucial for their product suite.
+  -->
+  <!-- 
+    Visualization & Content Choices: 
+    - Header Gradient: A sophisticated gradient using Mistral AI's brand colors (purple, fuchsia, orange) to create a strong visual connection to their identity.
+    - Experience Timeline: The timeline emphasizes my experience with scalable architectures (Feeling Sports) and my autonomy in product creation (RALTech), directly addressing the core requirements of the role.
+    - Core Skills Card: This card is meticulously updated to mirror the technologies listed in the job description. It explicitly lists TypeScript, NodeJS, and React/NextJS as primary skills, and Python/AWS as valuable assets, immediately signaling a strong technical fit to the recruiter.
+  -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Vertical line for the timeline */
+    .timeline-item {
+      position: relative;
+    }
+
+    /* Timeline circle indicators - Updated to Mistral AI's fuchsia color */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 1px);
+      /* Adjusted for mobile */
+      transform: translate(-50%, 4px);
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #c026d3;
+      /* fuchsia-600 */
+      z-index: 10;
+    }
+
+    /* Adjust position for larger screens */
+    @media (min-width: 768px) {
+      .timeline-item::before {
+        left: calc(-3rem - 1px);
+      }
+    }
+
+    /* Hover effect for experience cards to add interactivity */
+    .experience-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <main class="container mx-auto px-6 py-12 md:py-20 max-w-4xl">
+
+    <!-- Header Section: Name, Title, and Contact Info - Updated with Mistral AI gradient -->
+    <header class="bg-gradient-to-r from-purple-800 via-fuchsia-600 to-orange-500 text-white p-8 md:p-12 rounded-t-lg">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Robin TOURNÉ</h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-200">Senior Full Stack Engineer</p>
+      </div>
+      <div class="mt-8 flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-sm text-slate-200">
+        <a href="tel:+33629277229" class="hover:text-white transition-colors">Téléphone: +33 6 29 27 72 29</a>
+        <span class="hidden md:inline">|</span>
+        <a href="mailto:rotour.dev@gmail.com" class="hover:text-white transition-colors">rotour.dev@gmail.com</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://www.linkedin.com/in/robintourne-rotour/" target="_blank"
+          class="hover:text-white transition-colors">LinkedIn</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://github.com/rotour" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <span class="hidden md:inline">|</span>
+        <a href="https://rotour.dev" target="_blank" class="hover:text-white transition-colors">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="bg-white shadow-lg rounded-b-lg">
+      <div class="p-8 md:p-12">
+        <!-- Introduction: Directly addressing the company -->
+        <section id="intro" class="mb-12 md:mb-16">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3">À l'équipe de recrutement de Mistral AI,</h2>
+          <p class="text-lg text-slate-600 leading-relaxed">
+            Je vous écris pour exprimer mon immense intérêt pour le poste de Senior Full Stack Engineer. La mission de
+            Mistral AI, qui est de démocratiser l'IA à travers des modèles ouverts et performants, résonne profondément
+            avec ma passion pour la création de technologies qui ont un impact réel. Mon expérience dans la conception
+            d'applications robustes et scalables, alliée à ma maîtrise de l'écosystème <strong
+              class="font-semibold">TypeScript / NodeJS / React</strong>, correspond parfaitement aux défis de vos
+            produits.
+          </p>
+        </section>
+
+        <!-- Experience Section: A timeline of relevant achievements -->
+        <section id="experience" class="mb-12 md:mb-16">
+          <h3 class="text-3xl font-bold text-center text-slate-800 mb-10">Expériences et Compétences Techniques</h3>
+
+          <div class="relative pl-8 md:pl-12 border-l-2 border-slate-200">
+
+            <!-- Core Expertise Card -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card bg-slate-800 text-white shadow-lg">
+                <h4 class="text-xl font-bold text-white mt-1">Maîtrise de Votre Stack Technologique</h4>
+                <p class="text-slate-300 mt-2">Mon expertise couvre l'ensemble des technologies que vous recherchez pour
+                  ce rôle :</p>
+                <ul class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 text-slate-200">
+                  <li><strong class="font-semibold">Core Stack:</strong> TypeScript, NodeJS, React, NextJS</li>
+                  <li><strong class="font-semibold">Frontend Libraries:</strong> React Query, Framer Motion, tRPC</li>
+                  <li><strong class="font-semibold">Architecture:</strong> Domain-Driven Design, Hexagonal</li>
+                  <li><strong class="font-semibold">End-to-End:</strong> Conception, développement, CI/CD, déploiement
+                  </li>
+                  <li><strong class="font-semibold">Mes + :</strong> Expérience avec Python, AWS, et les systèmes
+                    distribués</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Feeling Sports Experience: Highlighting Scalability and NodeJS -->
+            <div class="timeline-item mb-12">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-fuchsia-600">Sept 2023 - Sept 2024</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Architecte Logiciel & Développeur Fullstack</h4>
+                <p class="text-md text-slate-500 font-medium">FEELING SPORTS</p>
+                <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Gestion de Systèmes à Haute Performance:</strong> J'ai refactorisé et
+                    optimisé une infrastructure pour supporter plus de <strong class="font-semibold">100 000
+                      utilisateurs concurrents</strong>. Cette expérience est directement applicable au développement de
+                    produits IA robustes et fiables.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Expertise Backend & DevOps:</strong> J'ai consolidé mon expertise en
+                    <strong class="font-semibold">NodeJS</strong> et en architecture de systèmes distribués sur <strong
+                      class="font-semibold">AWS</strong>, démontrant ma capacité à construire et maintenir des services
+                    complexes et performants.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RALTech Experience: Highlighting End-to-End Product Shipping and Autonomy -->
+            <div class="timeline-item">
+              <div class="p-6 rounded-xl experience-card">
+                <p class="text-sm font-semibold text-fuchsia-600">Sept 2023 - Aujourd'hui</p>
+                <h4 class="text-xl font-bold text-slate-800 mt-1">Fondateur & Développeur Fullstack</h4>
+                <p class="text-md text-slate-500 font-medium">RALTech (Plateforme E-Learning)</p>
+                <ul class="mt-4 space-y-3 list-disc list-inside text-slate-700">
+                  <li>
+                    <strong class="font-semibold">Développement de Produit de A à Z:</strong> En tant que fondateur,
+                    j'ai conçu et développé l'intégralité d'une plateforme SaaS, ce qui prouve ma capacité à <strong
+                      class="font-semibold">"ship products end-to-end"</strong> en toute autonomie.
+                  </li>
+                  <li>
+                    <strong class="font-semibold">Approche Centrée Utilisateur:</strong> J'ai développé des applications
+                    complexes avec <strong class="font-semibold">React</strong> et <strong
+                      class="font-semibold">TypeScript</strong>, en me concentrant sur une expérience utilisateur
+                    engageante et intuitive, une priorité que nous partageons.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Alignment & Closing: The final pitch -->
+        <section id="alignment" class="text-center bg-slate-800 text-white py-12 px-6 rounded-xl shadow-2xl">
+          <h3 class="text-3xl font-bold mb-4">Pourquoi Mistral AI ?</h3>
+          <p class="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed">
+            Je suis particulièrement attiré par votre culture "low-ego and team-spirited". Je suis convaincu que la
+            collaboration et l'innovation ouverte sont les clés pour repousser les limites de l'IA. Mon objectif est de
+            rejoindre une équipe pionnière pour contribuer à des projets qui non seulement résolvent des défis
+            techniques complexes, mais qui façonnent également l'avenir de la technologie.
+          </p>
+          <a href="https://rotour.dev" target="_blank"
+            class="mt-8 inline-block bg-fuchsia-600 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 hover:bg-fuchsia-700">
+            Découvrir mes projets
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-8">
+    <p class="text-slate-500">&copy; 2025 Robin TOURNÉ</p>
+  </footer>
+
+</body>
+
+</html>
